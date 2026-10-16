@@ -10,6 +10,26 @@ function getParametro(nombre) {
   return new URLSearchParams(window.location.search).get(nombre);
 }
 
+/* Zonas y clima: qué plantas se recomiendan según el lugar */
+const CLIMA_LABEL = {
+  pacifico: "Pacífico (cálido y seco)",
+  altiplano: "Tierras altas (fresco)",
+  caribe: "Caribe (cálido y húmedo)",
+};
+
+const getZona = (id) => ZONAS.find((z) => z.id === Number(id));
+
+function plantasParaZona(zonaId) {
+  const zona = getZona(zonaId);
+  if (!zona) return PLANTAS;
+  return PLANTAS.filter((pl) => (pl.climas || []).includes(zona.clima));
+}
+
+function zonasParaPlanta(planta) {
+  const climas = planta.climas || [];
+  return ZONAS.filter((z) => climas.includes(z.clima));
+}
+
 /* Navegación móvil */
 const navToggle = $("#navToggle");
 const siteNav = $("#siteNav");

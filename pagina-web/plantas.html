@@ -8,14 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">
-        <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?auto=format&fit=crop&w=100&q=80" alt="Abeja polinizadora" />
-        <span>Jardines Polinizadores<br /><small>de Nicaragua</small></span>
+        <img src="assets/logo.png" alt="Emblema de polinizadores y naturaleza" />
+        <span>Poliniza Nic<br /><small>Nicaragua</small></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
       <nav class="site-nav" id="siteNav">
@@ -42,6 +43,16 @@
 
     <section class="section">
       <div class="container">
+        <div class="filtro-zona">
+          <div>
+            <label for="filtroZona">¿Dónde vas a donar?</label>
+            <p class="filtro-ayuda">Elige tu municipio y verás solo las plantas y árboles que se adaptan a su clima.</p>
+          </div>
+          <select id="filtroZona">
+            <option value="">Todas las zonas</option>
+          </select>
+        </div>
+        <p class="filtro-resumen" id="filtroResumen"></p>
         <div class="species-grid" id="plantasGrid"></div>
         <div class="detail-panel" id="plantaDetalle" hidden></div>
       </div>

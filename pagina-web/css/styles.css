@@ -96,7 +96,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
 
 .logo small { font-family: "Outfit", sans-serif; font-weight: 500; color: var(--verde-600); }
 
-.logo img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
+.logo img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
 
 .site-nav { display: flex; gap: 0.3rem 1.1rem; flex-wrap: wrap; }
 
@@ -262,7 +262,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
   gap: 0;
 }
 
-.detail-hero img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; }
+.detail-hero > img { width: 100%; height: 100%; min-height: 240px; object-fit: cover; }
 
 .detail-body { padding: 1.6rem 1.8rem; }
 .detail-body h3 { font-size: 1.7rem; }
@@ -303,6 +303,47 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
 
 .chip img { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; }
 .chip:hover { background: #d4e9cf; }
+
+/* Filtro por zona en plantas */
+.filtro-zona {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 1.1rem 1.3rem;
+  box-shadow: var(--sombra);
+  margin-bottom: 0.9rem;
+}
+
+.filtro-zona label { font-weight: 700; color: var(--verde-900); font-size: 1.05rem; display: block; }
+.filtro-ayuda { font-size: 0.85rem; color: var(--texto-suave); margin-top: 0.15rem; }
+.filtro-zona select {
+  min-width: 240px;
+  padding: 0.65rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(74, 154, 74, 0.4);
+  background: #f5fbf3;
+  font: inherit;
+  color: var(--verde-900);
+  cursor: pointer;
+}
+
+.filtro-resumen { font-size: 0.92rem; color: var(--texto-suave); margin-bottom: 1.4rem; }
+.filtro-resumen strong { color: var(--verde-900); }
+
+.chips-zonas { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.chip-zona {
+  background: var(--verde-100);
+  color: var(--verde-900);
+  border: 1px solid rgba(74, 154, 74, 0.35);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
 
 /* Recipientes */
 .recipientes-layout {
@@ -455,6 +496,17 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
 
 .zona-item.resaltado { outline: 3px solid var(--verde-500); outline-offset: 2px; }
 
+.zona-enlace {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--verde-700);
+  text-decoration: none;
+}
+.zona-enlace:hover { text-decoration: underline; }
+.popup-enlace + .popup-enlace { margin-left: 0.9rem; }
+
 /* CTA final */
 .cta-final { background: var(--verde-900); color: var(--blanco); }
 .cta-final h2 { color: var(--blanco); margin-bottom: 0.6rem; }
@@ -545,7 +597,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
 @media (max-width: 900px) {
   .recipientes-layout, .zonas-layout { grid-template-columns: 1fr; }
   .detail-hero { grid-template-columns: 1fr; }
-  .detail-hero img { min-height: 200px; max-height: 260px; }
+  .detail-hero > img { min-height: 200px; max-height: 260px; }
   .hero-stats { grid-template-columns: 1fr; max-width: 420px; }
   #mapaNicaragua { height: 380px; }
 }

@@ -23,6 +23,7 @@ function popupZona(z) {
         <div class="progreso-barra"><i style="width:${z.progreso}%;background:${color}"></i></div>
         <span class="progreso-valor">${z.progreso}%</span>
       </div>
+      <a class="popup-enlace" href="plantas.html?zona=${z.id}">Ver plantas recomendadas</a>
       <a class="popup-enlace" href="${urlMapa}" target="_blank" rel="noopener">Abrir en Google Maps</a>
     </div>`;
 }
@@ -78,8 +79,13 @@ function renderZonas() {
         <div class="progreso-barra"><i style="width: ${z.progreso}%"></i></div>
         <span class="progreso-valor">${z.progreso}%</span>
       </div>
+      <a class="zona-enlace" href="plantas.html?zona=${z.id}">Ver plantas recomendadas para ${z.nombre} →</a>
     </article>`
   ).join("");
+
+  $$(".zona-enlace").forEach((a) =>
+    a.addEventListener("click", (e) => e.stopPropagation())
+  );
 
   $$(".zona-item").forEach((el) => {
     const id = Number(el.dataset.zonaId);

@@ -11,7 +11,7 @@ const POLINIZADORES = [
     descripcion:
       "Introducida en América hace siglos, la abeja melífera es hoy indispensable para la agricultura nicaragüense. Una sola colmena puede visitar millones de flores al año. Sus principales amenazas son el uso de plaguicidas, la pérdida de hábitat y enfermedades como la varroa.",
     datos: ["Poliniza más de 80 variedades de cultivos", "Produce miel, cera y propóleo", "Vive en colmenas organizadas"],
-    plantas: ["girasol", "cafe", "cacao", "buganvilla", "cempasuchil"],
+    plantas: ["girasol", "cafe", "cacao", "buganvilla", "cempasuchil", "madrono", "mango", "aguacate", "guayabo", "carao", "achiote", "ceiba", "salvia"],
   },
   {
     id: "abejorro",
@@ -23,7 +23,7 @@ const POLINIZADORES = [
     descripcion:
       "Los abejorros realizan la 'polinización por zumbido': agitan las flores para liberar el polen. Son especialmente efectivos en cultivos de altura como los de Matagalpa y Jinotega. Prefieren climas frescos y bosques de neblina con abundancia de flores silvestres.",
     datos: ["Polinizan aunque haga frío", "Su tongue largo alcanza flores tubulares", "Anidan en el suelo o entre vegetación"],
-    plantas: ["lavanda", "girasol", "maiz", "coralillo"],
+    plantas: ["lavanda", "girasol", "maiz", "coralillo", "carao", "achiote", "aguacate", "salvia"],
   },
   {
     id: "monarca",
@@ -47,7 +47,7 @@ const POLINIZADORES = [
     descripcion:
       "Los colibríes son las únicas aves capaces de volar sostenidamente hacia atrás. Al insertar su pico en flores tubulares para beber néctar, transportan polen de una planta a otra. En Nicaragua se les encuentra desde zonas bajas hasta bosques montanos, siempre cerca de flores de tubo largo.",
     datos: ["Su metabolismo exige néctar casi continuo", "Puede visitar cientos de flores por día", "Prefieren flores rojas y anaranjadas"],
-    plantas: ["izote", "coralillo", "buganvilla", "lavanda"],
+    plantas: ["izote", "coralillo", "buganvilla", "lavanda", "malva", "salvia"],
   },
   {
     id: "escarabajo",
@@ -59,7 +59,7 @@ const POLINIZADORES = [
     descripcion:
       "Los escarabajos polinizan desde hace más de 100 millones de años, antes de que existieran las abejas. Se alimentan de polen y néctar de flores abiertas y aromáticas. En zonas cálidas de Nicaragua se asocian con la polinización de árboles frutales y del cacao, cultivo emblemático de la costa caribeña.",
     datos: ["Polinizan flores abiertas y poco ornamentales", "Muchos viven en suelos sanos y hojarasca", "Sensibles a plaguicidas y monocultivos"],
-    plantas: ["cacao", "girasol", "maiz", "cafe"],
+    plantas: ["cacao", "girasol", "maiz", "cafe", "guanabana"],
   },
   {
     id: "abeja-mariola",
@@ -71,7 +71,7 @@ const POLINIZADORES = [
     descripcion:
       "Las abejas mariolas son nativas de Mesoamérica y no poseen aguijón funcional, por lo que pueden manejarse cerca de viviendas y escuelas. Viven en colonias pequeñas dentro de troncos huecos. Su tamaño reducido les permite entrar en flores que la abeja melífera no alcanza, mejorando el cuajado de café y cacao. Su miel es muy valorada y medicinal.",
     datos: ["Nativa y sin aguijón, fácil de manejar", "Poliniza flores pequeñas y profundas", "Miel apreciada por su valor medicinal"],
-    plantas: ["cafe", "cacao", "buganvilla", "coralillo"],
+    plantas: ["cafe", "cacao", "buganvilla", "coralillo", "madrono", "mango", "aguacate", "guayabo", "carao", "achiote"],
   },
   {
     id: "mariposa-julia",
@@ -83,7 +83,7 @@ const POLINIZADORES = [
     descripcion:
       "La mariposa Julia abunda en las tierras cálidas de Nicaragua. Su larga trompa le permite libar néctar de corolas profundas, y con sus patas transporta polen entre flores. Sus orugas se alimentan de plantas del género Passiflora (calala), por lo que setos con estas enredaderas favorecen su ciclo de vida completo.",
     datos: ["Activa durante todo el año en climas cálidos", "Su trompa larga alcanza flores tubulares", "Sus orugas dependen de las pasifloras"],
-    plantas: ["coralillo", "buganvilla", "cempasuchil"],
+    plantas: ["coralillo", "buganvilla", "cempasuchil", "malva"],
   },
   {
     id: "polilla-esfinge",
@@ -95,7 +95,7 @@ const POLINIZADORES = [
     descripcion:
       "La polilla esfinge o 'colibrí de noche' liba néctar mientras queda suspendida en el aire, igual que un colibrí. Trabaja cuando oscurece, polinizando flores blancas y aromáticas que abren al anochecer, como el izote. Es un polinizador nocturno fundamental, poco visible pero muy eficaz en jardines y huertos.",
     datos: ["Poliniza de noche y al atardecer", "Vuela suspendida como un colibrí", "Prefiere flores blancas y fragantes"],
-    plantas: ["izote", "lavanda", "coralillo"],
+    plantas: ["izote", "lavanda", "coralillo", "sacuanjoche", "jicaro"],
   },
   {
     id: "mosca-flores",
@@ -107,7 +107,7 @@ const POLINIZADORES = [
     descripcion:
       "Los sírfidos son moscas inofensivas con rayas amarillas y negras que las hacen parecer abejas o avispas. Los adultos polinizan flores abiertas como girasoles y cempasúchil, mientras sus larvas se alimentan de pulgones, convirtiéndolas en aliadas del control biológico en huertos y jardines escolares.",
     datos: ["Adultos polinizadores, larvas depredadoras", "Imitan a abejas para protegerse", "Reducen pulgones sin insecticidas"],
-    plantas: ["girasol", "cempasuchil", "maiz", "lavanda"],
+    plantas: ["girasol", "cempasuchil", "maiz", "lavanda", "mango", "guayabo"],
   },
   {
     id: "murcielago-nectar",
@@ -119,7 +119,7 @@ const POLINIZADORES = [
     descripcion:
       "Los murciélagos nectarívoros tienen lengua larga y velluda para lamer néctar de flores grandes, blancas o verdosas que abren de noche. Son polinizadores esenciales de cactus, agaves y de la flor de murciélago (Bauhinia). Sus refugios en cuevas y árboles huecos deben protegerse, pues una sola colonia poliniza grandes extensiones.",
     datos: ["Polinizan de noche flores grandes", "Su lengua larga lame el néctar", "Clave para cactus, agaves y bauhinia"],
-    plantas: ["flor-murcielago", "izote", "cacao"],
+    plantas: ["flor-murcielago", "izote", "cacao", "jicaro", "ceiba", "sacuanjoche"],
   },
   {
     id: "avispa-higos",
@@ -138,6 +138,7 @@ const POLINIZADORES = [
 const PLANTAS = [
   {
     id: "buganvilla",
+    climas: ["pacifico", "altiplano"],
     nombre: "Buganvilla",
     cientifico: "Bougainvillea spectabilis",
     img: "https://images.unsplash.com/photo-1597848212624-a19eb35e2651?auto=format&fit=crop&w=800&q=80",
@@ -151,6 +152,7 @@ const PLANTAS = [
   },
   {
     id: "izote",
+    climas: ["pacifico", "altiplano"],
     nombre: "Flor de izote",
     cientifico: "Yucca gigantea",
     img: "https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?auto=format&fit=crop&w=800&q=80",
@@ -164,6 +166,7 @@ const PLANTAS = [
   },
   {
     id: "girasol",
+    climas: ["pacifico", "altiplano", "caribe"],
     nombre: "Girasol",
     cientifico: "Helianthus annuus",
     img: "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?auto=format&fit=crop&w=800&q=80",
@@ -177,6 +180,7 @@ const PLANTAS = [
   },
   {
     id: "cempasuchil",
+    climas: ["pacifico", "altiplano", "caribe"],
     nombre: "Cempasúchil",
     cientifico: "Tagetes erecta",
     img: "https://images.unsplash.com/photo-1508615039623-a25605d2b022?auto=format&fit=crop&w=800&q=80",
@@ -190,6 +194,7 @@ const PLANTAS = [
   },
   {
     id: "cafe",
+    climas: ["altiplano"],
     nombre: "Café",
     cientifico: "Coffea arabica",
     img: "https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=800&q=80",
@@ -203,6 +208,7 @@ const PLANTAS = [
   },
   {
     id: "cacao",
+    climas: ["caribe"],
     nombre: "Cacao",
     cientifico: "Theobroma cacao",
     img: "https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80",
@@ -216,6 +222,7 @@ const PLANTAS = [
   },
   {
     id: "lavanda",
+    climas: ["altiplano"],
     nombre: "Lavanda",
     cientifico: "Lavandula angustifolia",
     img: "https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=800&q=80",
@@ -229,6 +236,7 @@ const PLANTAS = [
   },
   {
     id: "coralillo",
+    climas: ["pacifico", "altiplano", "caribe"],
     nombre: "Coralillo",
     cientifico: "Hamelia patens",
     img: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
@@ -242,6 +250,7 @@ const PLANTAS = [
   },
   {
     id: "maiz",
+    climas: ["pacifico", "altiplano", "caribe"],
     nombre: "Maíz",
     cientifico: "Zea mays",
     img: "https://images.unsplash.com/photo-1462530260150-162092dbf011?auto=format&fit=crop&w=800&q=80",
@@ -255,6 +264,7 @@ const PLANTAS = [
   },
   {
     id: "flor-murcielago",
+    climas: ["pacifico", "caribe"],
     nombre: "Flor de murciélago",
     cientifico: "Bauhinia monandra",
     img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bauhinia_monandra.jpg?width=800",
@@ -268,6 +278,7 @@ const PLANTAS = [
   },
   {
     id: "higo",
+    climas: ["pacifico", "altiplano"],
     nombre: "Higuera",
     cientifico: "Ficus carica",
     img: "https://commons.wikimedia.org/wiki/Special:FilePath/Fig_(Ficus_carica)_fruit_halved.jpg?width=800",
@@ -279,28 +290,196 @@ const PLANTAS = [
     beneficios: ["Fruto nutritivo y de rápido cultivo", "Alimento para aves y murciélagos", "Árbol de corredor biológico"],
     polinizadores: ["avispa-higos", "murcielago-nectar"],
   },
+  {
+    id: "madrono",
+    climas: ["pacifico"],
+    nombre: "Madroño",
+    cientifico: "Calycophyllum candidissimum",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Calycophyllum_candidissimum_in_Managua.jpg?width=800",
+    resumen:
+      "Árbol nacional de Nicaragua. Su floración blanca de fin de año lo convierte en un imán para las abejas.",
+    descripcion:
+      "El madroño, declarado Árbol Nacional de Nicaragua, florece entre noviembre y febrero, justo cuando la floración de otros árboles escasea. En Managua y el Pacífico es una de las principales fuentes de néctar para abejas y abejorros, y flores como la del café dependen de las colonias que alimenta. Su madera es apreciada y da sombra ligera en patios y calles.",
+    cuidados: ["Sol pleno", "Resistente a sequía", "Suelo bien drenado"],
+    beneficios: ["Árbol nacional y símbolo local", "Flora en la época seca", "Néctar abundante para abejas"],
+    polinizadores: ["abeja-mielifera", "abeja-mariola", "abejorro"],
+  },
+  {
+    id: "sacuanjoche",
+    climas: ["pacifico", "altiplano"],
+    nombre: "Sacuanjoche",
+    cientifico: "Plumeria rubra",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Plumeria_rubra_2852.jpg?width=800",
+    resumen:
+      "Flor nacional de Nicaragua. Sus flores blancas y amarillas liberan un aroma nocturno que atrae polillas esfinge.",
+    descripcion:
+      "El sacuanjoche es la Flor Nacional. Sus pétalos en espiral abren de noche y emiten un perfume intenso que guía a las polillas esfinge, sus principales polinizadoras. Es un árbol ornamental de crecimiento lento, ideal para jardines y patios secos, y símbolo de identidad cultural nicaragüense.",
+    cuidados: ["Sol pleno", "Poca agua", "Resiste suelos pobres"],
+    beneficios: ["Flor nacional de Nicaragua", "Aroma nocturno único", "Ornamental y de bajo riego"],
+    polinizadores: ["polilla-esfinge", "murcielago-nectar"],
+  },
+  {
+    id: "jicaro",
+    climas: ["pacifico"],
+    nombre: "Jícaro",
+    cientifico: "Crescentia alata",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Crescentia_alata_compose.jpg?width=800",
+    resumen:
+      "Árbol nativo de flores que brotan del tronco y son polinizadas por murciélagos. Sus frutos se vuelven recipientes.",
+    descripcion:
+      "El jícaro florece directamente sobre el tronco (caulifloria) con flores grandes que abren al anochecer para que los murciélagos las polinicen. Sus frutos, secos y duros, se usan como jícaras y artesanías, tradición viva en el campo nicaragüense. Es un árbol muy resistente a la sequía.",
+    cuidados: ["Sol pleno", "Muy resistente a sequía", "Suelo seco y rocoso"],
+    beneficios: ["Frutos para artesanía (jícaras)", "Alimento para murciélagos", "Vive sin riego"],
+    polinizadores: ["murcielago-nectar", "polilla-esfinge"],
+  },
+  {
+    id: "ceiba",
+    climas: ["pacifico", "caribe"],
+    nombre: "Ceiba",
+    cientifico: "Ceiba pentandra",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Ceiba_pentandra,_flowers.jpg?width=800",
+    resumen:
+      "Árbol gigante sagrado. Sus flores nocturnas alimentan murciélagos, que son sus principales polinizadores.",
+    descripcion:
+      "La ceiba es uno de los árboles más grandes del trópico y figura en la cosmovisión de los pueblos mesoamericanos. Sus flores rosadas abren de noche y son polinizadas por murciélagos y algunas abejas al amanecer. De su fruto se obtiene el kapok, fibra usada en almohadas y salvavidas.",
+    cuidados: ["Sol pleno", "Suelo profundo y húmedo", "Mucho espacio"],
+    beneficios: ["Árbol monumental y cultural", "Fibra de kapok reutilizable", "Refugio de fauna"],
+    polinizadores: ["murcielago-nectar", "abeja-mielifera"],
+  },
+  {
+    id: "mango",
+    climas: ["pacifico", "altiplano", "caribe"],
+    nombre: "Mango",
+    cientifico: "Mangifera indica",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Mangifera_indica_flower.jpg?width=800",
+    resumen:
+      "Árbol frutal muy común en Nicaragua. Sus flores atraen moscas y abejas que aumentan el cuajado del fruto.",
+    descripcion:
+      "El mango es uno de los frutales más plantados en los patios nicaragüenses. Cada panícula produce cientos de flores diminutas que son visitadas por moscas, abejas y abejorros. Una buena polinización se traduce en más frutos y de mejor tamaño, además de ofrecer sombra densa y fruta para la familia.",
+    cuidados: ["Sol pleno", "Riego regular en floración", "Poda de copa"],
+    beneficios: ["Fruta abundante y apreciada", "Sombra densa para el patio", "Mejora el cuajado con polinizadores"],
+    polinizadores: ["mosca-flores", "abeja-mielifera", "abeja-mariola", "abejorro"],
+  },
+  {
+    id: "aguacate",
+    climas: ["pacifico", "altiplano"],
+    nombre: "Aguacate",
+    cientifico: "Persea americana",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Persea_americana_flowers.jpg?width=800",
+    resumen:
+      "Árbol frutal de alto valor. Depende de abejas y abejorros para cuajar sus numerosas flores.",
+    descripcion:
+      "El aguacate produce miles de flores pequeñas de un color verde amarillento que abren en dos momentos distintos del día. Esta sincronía hace que necesite polinizadores eficientes como abejas y abejorros para cuajar la fruta. Plantar floraciones complementarias cerca mejora notablemente la cosecha.",
+    cuidados: ["Sol o media sombra", "Suelo profundo y bien drenado", "Protección del viento"],
+    beneficios: ["Fruto nutritivo de alto valor", "Árbol de larga vida", "Flores que alimentan abejas"],
+    polinizadores: ["abeja-mielifera", "abeja-mariola", "abejorro"],
+  },
+  {
+    id: "guayabo",
+    climas: ["pacifico", "altiplano", "caribe"],
+    nombre: "Guayabo",
+    cientifico: "Psidium guajava",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Psidium_guajava_flower_26032014_02.jpg?width=800",
+    resumen:
+      "Árbol frutal pequeño y resistente. Sus flores blancas alimentan abejas y producen guayabas todo el año.",
+    descripcion:
+      "El guayabo crece rápido y da frutos en pocos años, por lo que es un favorito de huertos escolares y familiares. Sus flores blancas y fragantes son visitadas por abejas y abejas sin aguijón, que mejoran la cantidad y calidad de la fruta. Es muy rústico y tolera suelos pobres y sequías.",
+    cuidados: ["Sol pleno", "Riego moderado", "Tolera poda fuerte"],
+    beneficios: ["Fructifica en poco tiempo", "Fruta rica en vitamina C", "Muy resistente y de bajo cuidado"],
+    polinizadores: ["abeja-mielifera", "abeja-mariola", "mosca-flores"],
+  },
+  {
+    id: "guanabana",
+    climas: ["pacifico", "caribe"],
+    nombre: "Guanábana",
+    cientifico: "Annona muricata",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Annona_muricata_soursop_flower_01.jpg?width=800",
+    resumen:
+      "Árbol frutal tropical cuyas flores carnosas son polinizadas principalmente por escarabajos.",
+    descripcion:
+      "La guanábana produce una de las frutas tropicales más valoradas. Sus flores gruesas y aromáticas atraen escarabajos que se alimentan de sus pétalos y transportan el polen. En zonas donde faltan estos escarabajos, la producción de frutos es baja, por lo que conservar hojarasca y evitar insecticidas es clave para la cosecha.",
+    cuidados: ["Clima cálido y húmedo", "Suelo profundo", "Protección del viento"],
+    beneficios: ["Fruta tropical de alto valor", "Hojas de uso medicinal", "Alimenta escarabajos polinizadores"],
+    polinizadores: ["escarabajo", "abeja-mielifera"],
+  },
+  {
+    id: "carao",
+    climas: ["pacifico"],
+    nombre: "Carao",
+    cientifico: "Cassia grandis",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Cassia_grandis_flower.jpg?width=800",
+    resumen:
+      "Árbol ornamental de flores rosadas en racimos, gran atractivo para abejas y abejorros.",
+    descripcion:
+      "El carao se cubre de racimos de flores rosadas en la estación seca, ofreciendo una fuente de néctar muy visible para abejas y abejorros. Sus largas vainas negras contienen semillas de uso tradicional en bebidas medicinales. Es un árbol de sombra ligera ideal para parques y avenidas.",
+    cuidados: ["Sol pleno", "Resistente a sequía", "Suelo bien drenado"],
+    beneficios: ["Floración vistosa en época seca", "Néctar para abejas", "Vainas de uso tradicional"],
+    polinizadores: ["abeja-mielifera", "abejorro", "abeja-mariola"],
+  },
+  {
+    id: "achiote",
+    climas: ["pacifico", "caribe"],
+    nombre: "Achiote",
+    cientifico: "Bixa orellana",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Bixa_orellana_flowers.JPG?width=800",
+    resumen:
+      "Arbusto de flores rosadas y frutos con semillas rojas usadas como colorante natural. Atrae abejas.",
+    descripcion:
+      "El achiote se cultiva por sus semillas, de las que se obtiene el colorante natural annatto usado en la cocina nicaragüense. Sus flores rosadas ofrecen polen y néctar a abejas y abejorros. Es un arbusto rústico que puede integrarse en cercas vivas y huertos familiares, aportando color y alimento.",
+    cuidados: ["Sol o media sombra", "Riego moderado", "Suelo fértil"],
+    beneficios: ["Colorante natural (annatto)", "Cerca viva y ornamental", "Alimento para abejas"],
+    polinizadores: ["abeja-mielifera", "abeja-mariola", "abejorro"],
+  },
+  {
+    id: "malva",
+    climas: ["pacifico", "caribe"],
+    nombre: "Malvá o quesillo",
+    cientifico: "Malvaviscus arboreus",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Malvaviscus_arboreus1.jpg?width=800",
+    resumen:
+      "Arbusto de flores rojas que nunca abren del todo, perfectas para el pico de los colibríes.",
+    descripcion:
+      "El malvá o quesillo produce flores rojas en forma de turbante que no se abren por completo, un diseño ideal para que los colibríes introduzcan el pico. Florece casi todo el año y crece bien a media sombra. Es una de las mejores plantas para atraer y sostener colibríes en jardines urbanos.",
+    cuidados: ["Media sombra", "Riego regular", "Poda ligera"],
+    beneficios: ["Atrae colibríes todo el año", "Flores de forma singular", "Seto bajo de fácil cultivo"],
+    polinizadores: ["colibri", "mariposa-julia"],
+  },
+  {
+    id: "salvia",
+    climas: ["pacifico", "altiplano", "caribe"],
+    nombre: "Salvia",
+    cientifico: "Salvia coccinea",
+    img: "https://commons.wikimedia.org/wiki/Special:FilePath/Salvia_coccinea_259451924.jpg?width=800",
+    resumen:
+      "Herbácea de flores rojas tubulares que alimentan colibríes, abejas y abejorros casi todo el año.",
+    descripcion:
+      "La salvia es una planta de floración abundante y prolongada que combina dos cualidades: sus flores tubulares rojas atraen colibríes y, a la vez, ofrecen néctar y polen a abejas y abejorros. Es fácil de cultivar en macetas y bordes de jardín, y se reproduce con rapidez, por lo que es económica para donaciones escolares.",
+    cuidados: ["Sol a media sombra", "Riego moderado", "Suelo drenado"],
+    beneficios: ["Floración prolongada", "Atrae colibríes y abejas", "Fácil de propagar"],
+    polinizadores: ["colibri", "abeja-mielifera", "abejorro"],
+  },
 ];
 
 const ZONAS = [
-  { id: 1, nombre: "Managua", lat: 12.1364, lng: -86.2514, jardines: 45, progreso: 82, nivel: "alto",
+  { id: 1, nombre: "Managua", lat: 12.1364, lng: -86.2514, jardines: 45, progreso: 82, nivel: "alto", clima: "pacifico",
     detalle: "Jardines en escuelas, parques y techos verdes. Alianza con la alcaldía y universidades." },
-  { id: 2, nombre: "León", lat: 12.4357, lng: -86.8776, jardines: 32, progreso: 74, nivel: "alto",
+  { id: 2, nombre: "León", lat: 12.4357, lng: -86.8776, jardines: 32, progreso: 74, nivel: "alto", clima: "pacifico",
     detalle: "Huertos polinizadores en barrios históricos y fincas de caña y hortalizas." },
-  { id: 3, nombre: "Granada", lat: 11.9344, lng: -85.9560, jardines: 28, progreso: 68, nivel: "medio",
+  { id: 3, nombre: "Granada", lat: 11.9344, lng: -85.9560, jardines: 28, progreso: 68, nivel: "medio", clima: "pacifico",
     detalle: "Corredores florales en Isletas y parques coloniales con especies nativas." },
-  { id: 4, nombre: "Matagalpa", lat: 12.9256, lng: -85.9176, jardines: 40, progreso: 71, nivel: "alto",
+  { id: 4, nombre: "Matagalpa", lat: 12.9256, lng: -85.9176, jardines: 40, progreso: 71, nivel: "alto", clima: "altiplano",
     detalle: "Linderos de café con izote, coralillo y bugs nativos en fincas familiares." },
-  { id: 5, nombre: "Jinotega", lat: 13.0917, lng: -85.9997, jardines: 36, progreso: 69, nivel: "alto",
+  { id: 5, nombre: "Jinotega", lat: 13.0917, lng: -85.9997, jardines: 36, progreso: 69, nivel: "alto", clima: "altiplano",
     detalle: "Jardines en beneficios de café y viveros comunitarios de flor de izote." },
-  { id: 6, nombre: "Estelí", lat: 13.0919, lng: -86.3583, jardines: 18, progreso: 55, nivel: "medio",
+  { id: 6, nombre: "Estelí", lat: 13.0919, lng: -86.3583, jardines: 18, progreso: 55, nivel: "medio", clima: "altiplano",
     detalle: "Parcelas demostrativas de lavanda y cempasúchil en la meseta." },
-  { id: 7, nombre: "Chinandega", lat: 12.6294, lng: -87.1311, jardines: 22, progreso: 48, nivel: "medio",
+  { id: 7, nombre: "Chinandega", lat: 12.6294, lng: -87.1311, jardines: 22, progreso: 48, nivel: "medio", clima: "pacifico",
     detalle: "Jardines escolares y rondas de río con buganvilla y coralillo." },
-  { id: 8, nombre: "Masaya", lat: 11.9736, lng: -86.0944, jardines: 20, progreso: 60, nivel: "medio",
+  { id: 8, nombre: "Masaya", lat: 11.9736, lng: -86.0944, jardines: 20, progreso: 60, nivel: "medio", clima: "pacifico",
     detalle: "Huertos familiares y corredores florales alrededor del lago de Apoyo." },
-  { id: 9, nombre: "Rivas", lat: 11.4372, lng: -85.8258, jardines: 12, progreso: 35, nivel: "bajo",
+  { id: 9, nombre: "Rivas", lat: 11.4372, lng: -85.8258, jardines: 12, progreso: 35, nivel: "bajo", clima: "pacifico",
     detalle: "Primeras pilotos en península de Rivas con recipientes reciclables reutilizados." },
-  { id: 10, nombre: "Bluefields (RAAS)", lat: 11.9996, lng: -83.7666, jardines: 8, progreso: 22, nivel: "bajo",
+  { id: 10, nombre: "Bluefields (RAAS)", lat: 11.9996, lng: -83.7666, jardines: 8, progreso: 22, nivel: "bajo", clima: "caribe",
     detalle: "Viveros de especies de la costa caribeña: cacao, coralillo y frutales nativos." },
 ];
 
