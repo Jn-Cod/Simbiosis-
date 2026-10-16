@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zonas de impacto | Jardines Polinizadores de Nicaragua</title>
+  <meta name="description" content="Mapa de las zonas de Nicaragua donde se establecen jardines polinizadores sostenibles, con nivel de impacto y progreso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?auto=format&fit=crop&w=100&q=80" alt="Abeja polinizadora" />
+        <span>Jardines Polinizadores<br /><small>de Nicaragua</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#importancia">Importancia</a>
+        <a href="polinizadores.html">Polinizadores</a>
+        <a href="plantas.html">Plantas</a>
+        <a href="recipientes.html">Recipientes</a>
+        <a href="zonas.html" class="activo">Zonas de impacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow">Seguimiento</p>
+        <h1>Zonas de impacto y progreso</h1>
+        <p>
+          Mapa de las zonas donde se están estableciendo jardines polinizadores sostenibles.
+          El tamaño del marcador y el color indican el nivel de impacto; la barra muestra el
+          progreso hacia la meta de jardines de cada zona.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="zonas-layout">
+          <div class="mapa-wrap">
+            <div id="mapaNicaragua" role="application" aria-label="Mapa real de Nicaragua con las zonas de impacto"></div>
+            <div class="leyenda">
+              <span><i class="dot alto"></i> Impacto alto</span>
+              <span><i class="dot medio"></i> Impacto medio</span>
+              <span><i class="dot bajo"></i> Impacto bajo</span>
+            </div>
+            <p class="mapa-nota">Haz clic en cada punto para ver el detalle de la zona. Mapa real de Nicaragua con datos de <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+          </div>
+          <div class="zonas-lista" id="zonasLista"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-final">
+      <div class="container cta-final-inner">
+        <div>
+          <h2>¿Tu municipio aún no aparece?</h2>
+          <p>Donando plantas y recipientes puedes iniciar un nuevo jardín polinizador en tu comunidad.</p>
+        </div>
+        <div class="cta-botones">
+          <a class="btn btn-primary" href="plantas.html">Donar plantas</a>
+          <a class="btn btn-outline" href="recipientes.html">Donar recipientes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Jardines Polinizadores de Nicaragua</strong> — iniciativa de conciencia ambiental y donación comunitaria.</p>
+      <p>Fuentes de datos: registros locales de jardines demostrativos. Sitio estático sin backend; las donaciones se registran en este dispositivo con fines demostrativos.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/zonas.js"></script>
+</body>
+</html>

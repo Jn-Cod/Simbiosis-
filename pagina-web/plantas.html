@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantas donables | Jardines Polinizadores de Nicaragua</title>
+  <meta name="description" content="Plantas que puedes donar a los jardines polinizadores de Nicaragua y los polinizadores que benefician." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?auto=format&fit=crop&w=100&q=80" alt="Abeja polinizadora" />
+        <span>Jardines Polinizadores<br /><small>de Nicaragua</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#importancia">Importancia</a>
+        <a href="polinizadores.html">Polinizadores</a>
+        <a href="plantas.html" class="activo">Plantas</a>
+        <a href="recipientes.html">Recipientes</a>
+        <a href="zonas.html">Zonas de impacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow">Paso 2</p>
+        <h1>Plantas que puedes donar</h1>
+        <p>Selecciona una planta para conocer qué polinizadores beneficia, sus cuidados y cómo se usa en los jardines sostenibles.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="species-grid" id="plantasGrid"></div>
+        <div class="detail-panel" id="plantaDetalle" hidden></div>
+      </div>
+    </section>
+
+    <section class="section cta-final">
+      <div class="container cta-final-inner">
+        <div>
+          <h2>Completa tu aporte</h2>
+          <p>Los jardines también se construyen con materiales reutilizados. Registra tu donación de recipientes.</p>
+        </div>
+        <div class="cta-botones">
+          <a class="btn btn-primary" href="recipientes.html">Donar recipientes</a>
+          <a class="btn btn-outline" href="zonas.html">Ver zonas de impacto</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Jardines Polinizadores de Nicaragua</strong> — iniciativa de conciencia ambiental y donación comunitaria.</p>
+      <p>Fuentes de datos: registros locales de jardines demostrativos. Sitio estático sin backend; las donaciones se registran en este dispositivo con fines demostrativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/plantas.js"></script>
+</body>
+</html>
+jardines-polinizadores

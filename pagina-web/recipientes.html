@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipientes reciclables | Jardines Polinizadores de Nicaragua</title>
+  <meta name="description" content="Dona recipientes reciclables para construir jardines polinizadores sostenibles en Nicaragua." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://images.unsplash.com/photo-1568526381923-caf3fd520382?auto=format&fit=crop&w=100&q=80" alt="Abeja polinizadora" />
+        <span>Jardines Polinizadores<br /><small>de Nicaragua</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">Menú</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#importancia">Importancia</a>
+        <a href="polinizadores.html">Polinizadores</a>
+        <a href="plantas.html">Plantas</a>
+        <a href="recipientes.html" class="activo">Recipientes</a>
+        <a href="zonas.html">Zonas de impacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-overlay"></div>
+      <div class="container page-hero-content">
+        <p class="eyebrow">Paso 3</p>
+        <h1>Donación de recipientes reciclables</h1>
+        <p>Los jardines polinizadores se construyen también con materiales reutilizados. Registra tu donación y un coordinador local te contactará para la recolección.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container recipientes-layout">
+        <div>
+          <header class="section-head left">
+            <h2>Materiales que recibimos</h2>
+            <p>Cada recipiente tiene un segundo uso dentro del jardín sostenible.</p>
+          </header>
+          <ul class="contenedores-lista" id="contenedoresLista"></ul>
+          <img class="reciclaje-img" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80" alt="Contenedores de reciclaje separados por material" />
+        </div>
+        <form class="donacion-form" id="formRecipientes" novalidate>
+          <h3>Formulario de donación</h3>
+          <label>
+            Nombre completo
+            <input type="text" name="nombre" required placeholder="Tu nombre" />
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" name="correo" required placeholder="tucorreo@ejemplo.com" />
+          </label>
+          <label>
+            Tipo de recipiente
+            <select name="tipo" required id="selectTipo"></select>
+          </label>
+          <label>
+            Cantidad aproximada
+            <input type="number" name="cantidad" min="1" required placeholder="Ej. 20" />
+          </label>
+          <label>
+            Zona o municipio
+            <select name="zona" required id="selectZona"></select>
+          </label>
+          <label>
+            Mensaje (opcional)
+            <textarea name="mensaje" rows="3" placeholder="Cuéntanos sobre tu donación"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Registrar donación</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta-final">
+      <div class="container cta-final-inner">
+        <div>
+          <h2>Conoce dónde llegan tus aportes</h2>
+          <p>Consulta el mapa de zonas con jardines sostenibles y su progreso.</p>
+        </div>
+        <a class="btn btn-primary" href="zonas.html">Ver zonas de impacto</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Jardines Polinizadores de Nicaragua</strong> — iniciativa de conciencia ambiental y donación comunitaria.</p>
+      <p>Fuentes de datos: registros locales de jardines demostrativos. Sitio estático sin backend; las donaciones se registran en este dispositivo con fines demostrativos.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/recipientes.js"></script>
+</body>
+</html>
