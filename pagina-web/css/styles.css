@@ -592,6 +592,8 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.15; color: 
 /* Footer */
 .site-footer { background: #163016; color: rgba(255, 255, 255, 0.75); padding: 2rem 0; font-size: 0.9rem; }
 .footer-inner p + p { margin-top: 0.4rem; }
+.footer-inner .creditos { list-style: none; padding: 0; margin: 0.4rem 0 0; }
+.footer-inner .creditos li { line-height: 1.5; }
 
 /* Responsive */
 @media (max-width: 900px) {
